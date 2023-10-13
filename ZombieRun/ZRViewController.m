@@ -193,41 +193,7 @@ int accumulatedShotguns;
     NSLog(@"viewDidLoad end");
 }
 
-- (void)viewDidUnload
-{
-    NSLog(@"viewDidUnload");
-    [self setMyDie1:nil];
-    [self setMyDie2:nil];
-    [self setMyDie3:nil];
-    [self setMyBrain1:nil];
-    [self setMyBrain2:nil];
-    [self setMyBrain3:nil];
-    [self setMyBrain4:nil];
-    [self setMyBrain5:nil];
-    [self setMyBrain6:nil];
-    [self setMyBrain7:nil];
-    [self setMyBrain8:nil];
-    [self setMyBrain9:nil];
-    [self setMyBrain10:nil];
-    [self setMyBrain11:nil];
-    [self setMyBrain12:nil];
-    [self setMyBrain13:nil];
-    [self setShot1:nil];
-    [self setShot2:nil];
-    [self setShot3:nil];
-    [super viewDidUnload];
-    NSLog(@"viewDidUnload end");
-    // Release any retained subviews of the main view.
-}
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    } else {
-        return YES;
-    }
-}
 
 - (IBAction)grabDice:(UIButton *)sender {
     NSLog(@"grabDice");
